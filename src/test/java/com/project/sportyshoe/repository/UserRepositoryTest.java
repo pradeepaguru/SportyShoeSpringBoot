@@ -20,7 +20,7 @@ class UserRepositoryTest {
                 brand("Adidas").category("Rely").createdDate(9)
                 .quantity(9).discount("9%").season("Rainy").build();
 
-       Users u = Users.builder().userName("Deepa").email("deepa@wsx.com").phone_number("877777777").products(p).password("09900900").build();
+       Users u = Users.builder().userName("Deepa").email("deepa@wsx.com").phone_number("877777777").assignedProducts((List<Products>) p).password("09900900").build();
        us.save(u);
     }
 @Test
